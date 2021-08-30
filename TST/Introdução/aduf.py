@@ -1,0 +1,12 @@
+abst = int(input())
+afv = int(input())
+cnt = int(input())
+print('Resultado da Votação')
+print()
+porc_abst = abst*100/(afv+cnt+abst)
+porc_afv = afv*100/(afv+cnt+abst)
+porc_cnt = cnt*100/(afv+cnt+abst)
+
+print('{} abstenções ({:.2f}%)'.format(abst, porc_abst))
+print('{} a favor ({:.2f}%)' .format(afv, porc_afv))
+print('{} contra ({:.2f}%)' .format(cnt, porc_cnt))
